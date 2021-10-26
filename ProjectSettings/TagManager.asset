@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - TutorialRequirement
+  - Cristal
   layers:
   - Default
   - TransparentFX
