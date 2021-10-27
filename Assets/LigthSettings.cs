@@ -23,11 +23,15 @@ public class LigthSettings : MonoBehaviour
     {
         if (isOn == false)
         {
+            // PAS DE CONSTANTE EN DUR DANS LE CODE
+            // 10 DOIT ETRE UNE VARIABLE !
             light2D.pointLightOuterRadius = 10;
-        }
-        if (isOn == true)
+            isOn = true;
+        } 
+        else if (isOn == true)
         {
             light2D.pointLightOuterRadius = 0;
+            isOn = false;
         }
     }
 
