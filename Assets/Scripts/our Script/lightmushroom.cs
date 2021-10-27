@@ -12,7 +12,7 @@ public class lightmushroom : MonoBehaviour
     {
         foreach (LampLigth currentLight in lightsToSwitch)
         {
-            if (currentLight.getRadius() == radiusMin);
+            //if (currentLight.getRadius() == radiusMin);
 
         }
 
