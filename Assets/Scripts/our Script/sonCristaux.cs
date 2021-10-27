@@ -38,10 +38,6 @@ public class sonCristaux : MonoBehaviour
         }
     }
 
-   /* void ()
-    {
-        if audio.Play().
-    } */
 
     void Update()
     {

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerRiddle : MonoBehaviour
 {
+    [SerializeField] AudioClip winMusic;
+    AudioSource audio1;
     [SerializeField] List<int> solution; // 1 4 3 6        4
     List<int> currentAnswer; // 1 4 3 5 6 7 5 1 4 3 6     11
     // Start is called before the first frame update
@@ -48,6 +50,12 @@ public class PlayerRiddle : MonoBehaviour
 
     public void Win()
     {
-        Debug.Log("GAGNEEEEE");
+        Debug.Log("win");
+        //gameObject.GetComponent<AudioSource> ().Play ();
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = winMusic;
+        audio.Play();
+        currentAnswer.Clear();
+
     }
 }
