@@ -15,44 +15,25 @@ public class LigthSettings : MonoBehaviour
         outerRadius = light2D.pointLightOuterRadius;
 
     }
-    
     public bool getIsOn()
     {
         return isOn;
     }
-
-    void OnTriggerEnter2D(Collider2D other)
+    public void SwitchLightOn()
     {
-
-        if (other.tag == "Player") //taguer player
+        if (isOn == false)
         {
-
-            isInsideTheZone = true;
+            light2D.pointLightOuterRadius = 10;
         }
-
-    }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-
-        if (other.tag == "Player") //taguer player
+        if (isOn == true)
         {
-
-            isInsideTheZone = false;
+            light2D.pointLightOuterRadius = 0;
         }
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isOn == false)
-        {
-            light2D.pointLightOuterRadius = 0;
-        } else
-        {
-            light2D.pointLightOuterRadius = 10;
-        }
 
     }
 
