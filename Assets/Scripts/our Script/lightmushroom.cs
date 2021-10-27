@@ -5,7 +5,7 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class lightmushroom : MonoBehaviour
 {
-    [SerializeField] List<LampLigth> lightsToSwitch;
+    [SerializeField] List<LigthSettings> lightsToSwitch;
     public bool isInsideTheZone = false;
     public bool succeed = false;
 
@@ -42,7 +42,7 @@ public class lightmushroom : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("3");
-                //lightsToSwitch.Switch();
+
 
             }
             else
