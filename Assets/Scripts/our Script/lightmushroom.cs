@@ -41,9 +41,10 @@ public class lightmushroom : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("3");
-
-
+                foreach (LigthSettings currentLight in lightsToSwitch)
+                {
+                    currentLight.SwitchLightOn();
+                }
             }
             else
             {
