@@ -25,11 +25,11 @@ public class lightmushroom : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other.tag == "Player")
+        /*if (other.tag == "Player")
         {
             isInsideTheZone = true;
             player = other.gameObject;
-        }
+        }*/
     }
 
     void OnTriggerExit2D(Collider2D other)
