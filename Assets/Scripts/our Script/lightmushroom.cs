@@ -5,37 +5,31 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class lightmushroom : MonoBehaviour
 {
-
     [SerializeField] List<LampLigth> lightsToSwitch;
     public bool isInsideTheZone = false;
     public bool succeed = false;
 
+    private GameObject player;
+
     void Start()
     {
-        foreach (LampLigth currentLight in lightsToSwitch)
-        {
-
-            //if (currentLight.getRadius() == radiusMin);
-
-
-        }
-
+        
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-
-        /*if (other.tag == "Player")
+        Debug.Log("1");
+        if (other.tag == "Player")
         {
             isInsideTheZone = true;
             player = other.gameObject;
-        }*/
+        }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-
-        if (other.tag == "Player") //taguer player au préalable 
+        Debug.Log("2");
+        if (other.tag == "Player")  
         {
             isInsideTheZone = false;
         }
@@ -47,7 +41,8 @@ public class lightmushroom : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-
+                Debug.Log("3");
+                //lightsToSwitch.Switch();
 
             }
             else
