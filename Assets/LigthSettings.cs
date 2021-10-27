@@ -2,16 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
-public class LampLigth : MonoBehaviour
+
+public class LigthSettings : MonoBehaviour
 {
     public bool isInsideTheZone = false;
     Light2D light2D;
     private float outerRadius;
+    public bool isOn;
     void Awake()
     {
         light2D = GetComponent<Light2D>();
         outerRadius = light2D.pointLightOuterRadius;
 
+    }
+    
+    public bool getIsOn()
+    {
+        return isOn;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -39,15 +46,14 @@ public class LampLigth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isInsideTheZone)
+        if (isOn == false)
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-
-                light2D.pointLightOuterRadius = 50;
-
-            }
+            light2D.pointLightOuterRadius = 0;
+        } else
+        {
+            light2D.pointLightOuterRadius = 10;
         }
+
     }
 
     void OnEnable()
