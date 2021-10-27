@@ -9,6 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Emma.unity
-    guid: 48949410cd314054ea08675b8b569d1c
+    path: Assets/Scenes/TestGrenier - Copie.unity
+    guid: 333580151ffb3664dbb3a6c9e0bde1e0
+  - enabled: 1
+    path: Assets/Scenes/TestNeige.unity
+    guid: 9ba185af2502da64c9c400e75cd492a9
+  - enabled: 1
+    path: Assets/Scenes/TestForet.unity
+    guid: 2b51e05f1e28fd24eb8c771bd052e1c9
+  - enabled: 1
+    path: Assets/Scenes/TestCristaux.unity
+    guid: 250c7a3fc8e15314a800357c7869ea3b
+  - enabled: 1
+    path: Assets/Scenes/TestCielEnzo.unity
+    guid: 6583d0b77dd97bd4fba240410c38f470
   m_configObjects: {}
