@@ -42,7 +42,7 @@ public class lightmushroom : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("3");
-                lightsToSwitch.Switch();
+                //lightsToSwitch.Switch();
 
             }
             else
