@@ -43,9 +43,8 @@ public class LampLigth : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("EEEEEEEEEE");
+
                 light2D.pointLightOuterRadius = 50;
-                Debug.Log("Lumiereeeeeeee");
 
             }
         }
