@@ -27,7 +27,6 @@ public class DialogManager : MonoBehaviour
     // Sets the dialog to be displayed
     public void SetDialog(List<DialogPage> dialogToAdd)
     {
-        Debug.Log("SetDialog");
         m_dialogToDisplay = new List<DialogPage>(dialogToAdd);
 
         if (m_dialogToDisplay.Count > 0)
@@ -44,7 +43,6 @@ public class DialogManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("update");
         if (m_renderText == null)
         {
             this.gameObject.SetActive(false);
@@ -69,7 +67,6 @@ public class DialogManager : MonoBehaviour
 
     public bool IsOnScreen()
     {
-        Debug.Log("isonscreen");
         return this.gameObject.activeSelf;
     }
 }

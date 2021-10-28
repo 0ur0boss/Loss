@@ -7,7 +7,7 @@ public class Dialog : MonoBehaviour
    
     public List<DialogPage> GetDialog()
     {
-        Debug.Log("1");
+
         return m_dialogWithPlayer;
     }
 }

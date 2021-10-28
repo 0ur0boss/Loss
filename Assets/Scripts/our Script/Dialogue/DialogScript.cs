@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogManager1 : MonoBehaviour
+public class DialogScript : MonoBehaviour
 {
     private Dialog m_closestNPCDialog;
     [SerializeField] public DialogManager m_dialogDisplayer;
@@ -13,15 +13,13 @@ public class DialogManager1 : MonoBehaviour
 
         private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Trigger");
         if (collision.tag == "NPC")
         {
-            Debug.Log("NPC");
             m_closestNPCDialog = collision.GetComponent<Dialog>();
         }
         else if (collision.tag == "InstantDialog")
         {
-            Debug.Log("InstantDialog");
+
             Dialog instantDialog = collision.GetComponent<Dialog>();
             if (instantDialog != null)
             {
@@ -65,5 +63,8 @@ public class DialogManager1 : MonoBehaviour
         }
     }
 }
+
+
+
 
 
