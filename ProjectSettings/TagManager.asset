@@ -6,6 +6,8 @@ TagManager:
   tags:
   - TutorialRequirement
   - Cristal
+  - NPC
+  - InstantDialog
   layers:
   - Default
   - TransparentFX
