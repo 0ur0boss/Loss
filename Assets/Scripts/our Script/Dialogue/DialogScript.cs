@@ -11,7 +11,7 @@ public class DialogScript : MonoBehaviour
         m_closestNPCDialog = null;
     }
 
-        private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "NPC")
         {
@@ -62,7 +62,9 @@ public class DialogScript : MonoBehaviour
             }
         }
     }
+
 }
+
 
 
 
