@@ -15,6 +15,7 @@ public struct DialogPage
 // This class is used to correctly display a full dialog
 public class DialogManager : MonoBehaviour
 {
+    public static bool gameIsPaused = false;
 
     public Text m_renderText;
     public List<DialogPage> m_dialogToDisplay;
@@ -62,6 +63,8 @@ public class DialogManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             m_dialogToDisplay.RemoveAt(0);
+            Time.timeScale = 1;
+            gameIsPaused = false;
         }
     }
 
