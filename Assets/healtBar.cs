@@ -17,6 +17,5 @@ public class healtBar : MonoBehaviour
 
         fill.color = gradient.Evaluate(slider.normalizedValue);
         }
-        Debug.Log(slider.value);
     }
 }
