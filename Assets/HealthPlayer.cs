@@ -11,6 +11,7 @@ public class HealthPlayer : MonoBehaviour
     // Start is called before the first frame update
 
     public healtBar healtbar;
+    public GameOver gameOver;
     void Start()
     {
         healtbar.SetHealth(currentHealth);
@@ -69,6 +70,11 @@ public class HealthPlayer : MonoBehaviour
             } else
             {
                 TakeDamage(domage);
+            }
+
+            if (currentHealth == 0)
+            {
+                gameOver.EndGame();
             }
 
         }
