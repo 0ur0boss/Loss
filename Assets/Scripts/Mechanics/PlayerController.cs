@@ -18,6 +18,7 @@ namespace Platformer.Mechanics
 
         public float maxSpeed = 10;
 
+        public float littlejumpoffset;
 
         public float jumpTakeOffSpeed = 10;
 
@@ -27,6 +28,10 @@ namespace Platformer.Mechanics
         public AudioSource audioSource;
         public Health health;
         public bool controlEnabled = true;
+
+        public Rigidbody2D rb2D;
+
+        bool isGoingLeft = false;
 
         bool jump;
         Vector2 move;
@@ -113,9 +118,28 @@ namespace Platformer.Mechanics
             }
 
             if (move.x > 0.01f)
-                spriteRenderer.flipX = false;
+            {
+                if (isGoingLeft)
+                {
+                    isGoingLeft = false;
+                    transform.Translate(new Vector3(-littlejumpoffset, 0));
+                }
+                // transform.rotation = Quaternion.Euler(0, 0, 0);
+                rb2D.transform.rotation = Quaternion.Euler(0, 0, 0);
+
+               
+            }
             else if (move.x < -0.01f)
-                spriteRenderer.flipX = true;
+            {
+                if (!isGoingLeft)
+                {
+                    isGoingLeft = true;
+                    transform.Translate(new Vector3(-littlejumpoffset, 0));
+                }
+                //transform.rotation = Quaternion.Euler(0, -180, 0);
+                rb2D.transform.rotation = Quaternion.Euler(0, -180, 0);
+
+            }
 
 
 

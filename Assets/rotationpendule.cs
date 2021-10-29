@@ -8,7 +8,6 @@ public class rotationpendule : MonoBehaviour
     public float Z;
     public float minZ;
     public float maxZ;
-    Vector3 currentAngles;
     public bool sensHoraire = false;
 
 
@@ -20,6 +19,7 @@ public class rotationpendule : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
 
         if (sensHoraire == false)
 
