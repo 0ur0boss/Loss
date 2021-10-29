@@ -57,14 +57,15 @@ public class DialogManager : MonoBehaviour
         else
         {
             this.gameObject.SetActive(false);
+            Time.timeScale = 1;
+            gameIsPaused = false;
         }
 
         // Removes the page when the player presses "e"
         if (Input.GetKeyDown(KeyCode.E))
         {
             m_dialogToDisplay.RemoveAt(0);
-            Time.timeScale = 1;
-            gameIsPaused = false;
+            
         }
     }
 
