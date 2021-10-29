@@ -9,6 +9,7 @@ public class LigthSettings : MonoBehaviour
     Light2D light2D;
     private float outerRadius;
     public bool isOn;
+    public float NewRadius = 500;
     void Awake()
     {
         light2D = GetComponent<Light2D>();
@@ -23,14 +24,12 @@ public class LigthSettings : MonoBehaviour
     {
         if (isOn == false)
         {
-            // PAS DE CONSTANTE EN DUR DANS LE CODE
-            // 10 DOIT ETRE UNE VARIABLE !
-            light2D.pointLightOuterRadius = 10;
+            light2D.pointLightOuterRadius = NewRadius;
             isOn = true;
         } 
         else if (isOn == true)
         {
-            light2D.pointLightOuterRadius = 0;
+            light2D.pointLightOuterRadius = NewRadius;
             isOn = false;
         }
     }

@@ -34,7 +34,7 @@ public class Tptociel : MonoBehaviour
     {
         if (isInsideTheZone)
         {
-            SceneManager.LoadScene("TestCielEnzo");
+            SceneManager.LoadScene("Ciel");
         }
     }
 }

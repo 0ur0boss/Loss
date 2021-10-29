@@ -7,6 +7,7 @@ public class LampLigth : MonoBehaviour
     public bool isInsideTheZone = false;
     Light2D light2D;
     private float outerRadius;
+    public float newouterRadius = 50;
     void Awake()
     {
         light2D = GetComponent<Light2D>();
@@ -44,7 +45,7 @@ public class LampLigth : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
 
-                light2D.pointLightOuterRadius = 50;
+                light2D.pointLightOuterRadius = newouterRadius;
 
             }
         }

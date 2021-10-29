@@ -34,7 +34,7 @@ public class Tptocristaux : MonoBehaviour
     {
         if (isInsideTheZone)
         {
-            SceneManager.LoadScene("TestCristaux");
+            SceneManager.LoadScene("Cristaux");
         }
     }
 }

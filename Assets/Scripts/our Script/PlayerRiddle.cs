@@ -8,7 +8,8 @@ public class PlayerRiddle : MonoBehaviour
     AudioSource audio1;
     [SerializeField] List<int> solution; // 1 4 3 6        4
     List<int> currentAnswer; // 1 4 3 5 6 7 5 1 4 3 6     11
-    // Start is called before the first frame update
+    public ligthWin ligthwin;
+    public HealthPlayer healthplayer;
     void Start()
     {
         currentAnswer = new List<int>();
@@ -55,6 +56,8 @@ public class PlayerRiddle : MonoBehaviour
         AudioSource audio = GetComponent<AudioSource>();
         audio.clip = winMusic;
         audio.Play();
+        ligthwin.WinCondi();
+        healthplayer.domage = 0;
         currentAnswer.Clear();
 
     }

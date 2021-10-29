@@ -34,7 +34,7 @@ public class Tptoneige : MonoBehaviour
     {
         if (isInsideTheZone)
         {
-            SceneManager.LoadScene("TestNeige");
+            SceneManager.LoadScene("Neige");
         }
     }
 }

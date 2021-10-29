@@ -34,7 +34,7 @@ public class Tptogrenier : MonoBehaviour
     {
         if (isInsideTheZone)
         {
-            SceneManager.LoadScene("TestGrenier - Copie");
+            SceneManager.LoadScene("Grenier");
         }
     }
 }

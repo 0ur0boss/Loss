@@ -34,7 +34,7 @@ public class Tptoforet : MonoBehaviour
     {
         if (isInsideTheZone)
         {
-            SceneManager.LoadScene("TestForet");
+            SceneManager.LoadScene("Foret");
         }
     }
 }
