@@ -38,6 +38,7 @@ public class DialogManager : MonoBehaviour
     // Sets the dialog to be displayed
     public void SetDialog(List<DialogPage> dialogToAdd)
     {
+        pageIndex = 0;
         m_dialogToDisplay = new List<DialogPage>(dialogToAdd);
 
         if (m_dialogToDisplay.Count > 0)
@@ -51,8 +52,6 @@ public class DialogManager : MonoBehaviour
             {
                 m_renderName.text = "";
             }
-
-            
 
             this.gameObject.SetActive(true);
         }
@@ -108,5 +107,5 @@ public class DialogManager : MonoBehaviour
     public bool IsOnScreen()
     {
         return this.gameObject.activeSelf;
-    }
+}
 }

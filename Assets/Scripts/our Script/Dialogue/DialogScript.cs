@@ -50,7 +50,6 @@ public class DialogScript : MonoBehaviour
     {
         if (m_dialogDisplayer.IsOnScreen())
         {
-            Debug.Log("5");
             Time.timeScale = 0;
             gameIsPaused = true;
             return;
