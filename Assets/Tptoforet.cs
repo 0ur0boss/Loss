@@ -7,6 +7,7 @@ public class Tptoforet : MonoBehaviour
 {
 
     public bool isInsideTheZone = false;
+    public Vector3 backSpawn;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -35,6 +36,9 @@ public class Tptoforet : MonoBehaviour
         if (isInsideTheZone)
         {
             SceneManager.LoadScene("Foret");
+            PlayerPrefs.SetFloat("BACKX", backSpawn.x);
+            PlayerPrefs.SetFloat("BACKY", backSpawn.y);
+            PlayerPrefs.SetFloat("BACKZ", backSpawn.z);
         }
     }
 }

@@ -29,7 +29,7 @@ public class LigthSettings : MonoBehaviour
         } 
         else if (isOn == true)
         {
-            light2D.pointLightOuterRadius = NewRadius;
+            light2D.pointLightOuterRadius = 0;
             isOn = false;
         }
     }

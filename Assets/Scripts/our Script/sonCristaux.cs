@@ -13,7 +13,8 @@ public class sonCristaux : MonoBehaviour
     public bool succeed = false;
 
     public int riddleId = 1;
-    private GameObject player;
+    public GameObject player;
+
      
     void Start()
     {

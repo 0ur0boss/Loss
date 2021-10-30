@@ -9,6 +9,8 @@ public class ligthWin : MonoBehaviour
     private float outerAngles;
     public float NewRadius = 50;
     public float NewAngles = 360;
+    public GameManager gameManager;
+    bool WinEnigme = false;
     void Awake()
     {
         light2D = GetComponent<Light2D>();
@@ -22,11 +24,14 @@ public class ligthWin : MonoBehaviour
     }
 
 
-
-    // Update is called once per frame
     public void WinCondi()
     {
         light2D.pointLightOuterRadius = NewRadius;
         light2D.pointLightOuterAngle = NewAngles;
+        if (WinEnigme == false)
+        {
+            WinEnigme = true;
+            gameManager.Winfinal();
+        }
     }
 }

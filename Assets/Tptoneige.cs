@@ -7,7 +7,8 @@ public class Tptoneige : MonoBehaviour
 {
 
     public bool isInsideTheZone = false;
-
+    public Vector3 backSpawn;
+    public GameObject player;
     void OnTriggerEnter2D(Collider2D other)
     {
 
@@ -35,6 +36,9 @@ public class Tptoneige : MonoBehaviour
         if (isInsideTheZone)
         {
             SceneManager.LoadScene("Neige");
+            PlayerPrefs.SetFloat("BACKX", backSpawn.x);
+            PlayerPrefs.SetFloat("BACKY", backSpawn.y);
+            PlayerPrefs.SetFloat("BACKZ", backSpawn.z);
         }
     }
 }
