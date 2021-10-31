@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Neige.unity
     guid: 8ecb0b2087f16af479a33c9ba12140b8
+  - enabled: 1
+    path: "Assets/Scenes/Cr\xE9dits.unity"
+    guid: 32a1f3521246f9e47aa61d5e5c832f51
   m_configObjects: {}
