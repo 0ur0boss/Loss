@@ -9,7 +9,6 @@ public class ligthWin : MonoBehaviour
     private float outerAngles;
     public float NewRadius = 50;
     public float NewAngles = 360;
-    public GameManager gameManager;
     bool WinEnigme = false;
     void Awake()
     {
@@ -31,7 +30,7 @@ public class ligthWin : MonoBehaviour
         if (WinEnigme == false)
         {
             WinEnigme = true;
-            gameManager.Winfinal();
+            GameManager.instance.Winfinal();
         }
     }
 }

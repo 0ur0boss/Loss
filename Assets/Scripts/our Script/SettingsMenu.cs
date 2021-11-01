@@ -28,7 +28,7 @@ public class SettingsMenu : MonoBehaviour
 
             if (resolutions[i].width == Screen.width && resolutions[i].height == Screen.height)
             {
-                currentResolutionIndex = 1;
+                currentResolutionIndex = 2;
             }
         }
 
@@ -47,9 +47,9 @@ public class SettingsMenu : MonoBehaviour
         Screen.fullScreen = isFullScreen;
     }
 
-    public void SetResolution(int resolutionIndex)
+    /* public void SetResolution(int resolutionIndex)
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
-    }
+    } */
 }

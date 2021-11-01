@@ -29,6 +29,8 @@ public class DialogManager : MonoBehaviour
 
     public int pageIndex = 0;
 
+    public ligthWin ligthwin;
+    public HealthPlayer healthplayer;
 
     void Awake()
     {
@@ -85,7 +87,11 @@ public class DialogManager : MonoBehaviour
         {
             this.gameObject.SetActive(false);
             Time.timeScale = 1;
+            ligthwin.WinCondi();
+            healthplayer.domage = 0;
             gameIsPaused = false;
+
+
         }
 
         // Removes the page when the player presses "e"

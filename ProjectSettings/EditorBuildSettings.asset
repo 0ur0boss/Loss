@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Cr\xE9dits.unity"
     guid: 32a1f3521246f9e47aa61d5e5c832f51
+  - enabled: 1
+    path: Assets/Scenes/EndVideo.unity
+    guid: 16ff74331c8078d448bfa12b0a04d8dc
   m_configObjects: {}

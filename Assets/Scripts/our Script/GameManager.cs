@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public bool dialogDisplayed = false;
     private float Win;
+    
     
 
     void Start()
@@ -33,7 +35,7 @@ public class GameManager : MonoBehaviour
         Debug.Log(Win);
         if (Win >= 4)
         {
-           // videoPlayer.url = "/Assets/Video/End.mp4";          
+            SceneManager.LoadScene("EndVideo");
         }
     }
 }
